@@ -1,6 +1,7 @@
 import { useState, useEffect } from "million/react";
 // import reactLogo from "/react.svg";
 // import millionLogo from "/million.svg";
+import "../styles/App.css";
 
 function App() {
   const [count, setCount] = useState(0);
