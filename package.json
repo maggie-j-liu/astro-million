@@ -13,6 +13,6 @@
     "astro": "^1.0.6"
   },
   "dependencies": {
-    "million": "^1.12.4"
+    "million": "^1.12.5"
   }
 }

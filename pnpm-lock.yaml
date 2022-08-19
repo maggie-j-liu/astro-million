@@ -2,10 +2,10 @@ lockfileVersion: 5.4
 
 specifiers:
   astro: ^1.0.6
-  million: ^1.12.4
+  million: ^1.12.5
 
 dependencies:
-  million: 1.12.4
+  million: 1.12.5
 
 devDependencies:
   astro: 1.0.6
@@ -2116,8 +2116,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /million/1.12.4:
-    resolution: {integrity: sha512-gTi9nfm0CHjTq1REYHB4OpYi3GCNbBDRawV0VPRw/BLOOfiSEBpk5q8IxGullGRGeh90oRAXZy7SeDTDy9sv2A==}
+  /million/1.12.5:
+    resolution: {integrity: sha512-faOnk3o1/SRgpfjAL54M7HCACNTim5Wo6yaEEC7qjy1j3h1Wdv7cie/Iw+fYt9tJn5SXs0W8+DX4MHzfMdguzw==}
     dev: false
 
   /mime/3.0.0:

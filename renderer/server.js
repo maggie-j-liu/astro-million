@@ -9,19 +9,6 @@ function check(Component, props, children) {
   return props.million;
 }
 
-const replaceClassNameWithClass = (node) => {
-  if (node.props?.className) {
-    node.props.class = node.props.className;
-    delete node.props.className;
-  }
-  if (node.children) {
-    for (const child of node.children) {
-      replaceClassNameWithClass(child);
-    }
-  }
-  return node;
-};
-
 function renderToStaticMarkup(
   Component,
   props,
@@ -43,9 +30,7 @@ function renderToStaticMarkup(
         ? React.createElement(StaticHtml, { value: children })
         : undefined,
   };
-  const vnode = replaceClassNameWithClass(
-    React.createElement(Component, newProps)
-  );
+  const vnode = React.createElement(Component, newProps);
   let html;
   if (metadata && metadata.hydrate) {
     html = ReactDOM.renderToString(vnode);
