@@ -1,0 +1,19 @@
+---
+import App from "../components/App.jsx"
+import "../styles/index.css"
+import "../styles/App.css";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<div id="root">
+		<App client:idle million />
+		</div>
+	</body>
+</html>
